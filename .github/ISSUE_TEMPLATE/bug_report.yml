@@ -1,0 +1,52 @@
+name: 操作問題回報
+description: 回報做圖吧 LINE 貼圖上架工具的操作或上架問題
+title: "[問題] "
+body:
+  - type: markdown
+    attributes:
+      value: "這份工單會公開。請遮蔽購買信箱、授權碼、LINE 登入資訊、電腦使用者名稱、商品頁帳號識別碼與尚未公開的作品。"
+  - type: input
+    id: version
+    attributes:
+      label: 工具版本
+      placeholder: 例如 v1.0.8
+    validations:
+      required: true
+  - type: dropdown
+    id: workflow
+    attributes:
+      label: 發生問題的功能
+      options:
+        - 單套上架－貼圖
+        - 單套上架－表情貼
+        - 批次快速上架
+        - 授權啟用
+        - 檢查更新
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 操作步驟
+      description: 請依序列出從開啟工具到出現問題的步驟。
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 實際結果
+      description: 顯示了什麼錯誤或停在哪個畫面？
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 預期結果
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: 已遮蔽的診斷資訊或截圖（選填）
+      description: 貼上前請再次檢查是否包含個人資料、授權碼或未公開作品。
