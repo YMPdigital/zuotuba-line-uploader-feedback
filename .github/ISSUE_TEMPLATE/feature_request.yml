@@ -1,0 +1,26 @@
+name: 功能建議與使用回饋
+description: 告訴我們哪裡可以更順手，或你希望新增的功能
+title: "[建議] "
+body:
+  - type: markdown
+    attributes:
+      value: "這份回饋會公開，請勿填入授權碼、購買信箱、LINE 登入資料或未公開作品。操作錯誤請改用「操作問題回報」。"
+  - type: textarea
+    id: need
+    attributes:
+      label: 目前遇到什麼不方便？
+      description: 簡單說明你的使用情境，或想解決的問題。
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 希望怎麼改善？
+      description: 不需要技術細節，描述理想的使用方式即可。
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: 補充說明或示意圖（選填）
+      description: 如需附圖，請先遮蔽個人資料、授權碼及未公開作品。
